@@ -13,6 +13,10 @@ public class Calculadora {
         return a-b;
     }
 
+    public double multiplicar(double a, double b){
+        return a*b;
+    }
+
     public Ecuacion getEcuacion(){
         return this.ecuacion;
     }

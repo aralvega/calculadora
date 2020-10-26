@@ -6,6 +6,17 @@ import org.junit.jupiter.api.Test;
 
 public class CalculadoraTest {
     @Test
+    public void multiplicarNumerosNegativos(){
+        //init
+        Calculadora calculadora = new Calculadora();
+        //define values
+        double a=-5;
+        double b=-7;
+        //evaluation
+        assertEquals(35, calculadora.multiplicar(a, b));
+    }
+
+    @Test
     public void sumarNumerosEnteros(){
         //init
         Calculadora calculadora = new Calculadora();
@@ -26,7 +37,7 @@ public class CalculadoraTest {
         assertEquals(-12, calculadora.sumar(a, b));
     }
     @Test
-    public void restNumerosNegativos(){
+    public void restarNumerosNegativos(){
         //init
         Calculadora calculadora = new Calculadora();
         //define values
